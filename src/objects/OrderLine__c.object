@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Line items in an order</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>BillingFrequency__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>A link to billing frequency</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select billing frequency</inlineHelpText>
+        <label>Billing Frequency</label>
+        <referenceTo>BillingFrequency__c</referenceTo>
+        <relationshipLabel>Order Line Billing Frequency</relationshipLabel>
+        <relationshipName>OrderLinesBillingFrequency</relationshipName>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CurrentNet__c</fullName>
+        <description>Current net amount</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter net amount</inlineHelpText>
+        <label>Current Net</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Discount__c</fullName>
+        <description>Discount amount</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter discount amount</inlineHelpText>
+        <label>Discount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>FunctionalCurrency__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Function currency</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select functional currency</inlineHelpText>
+        <label>Functional Currency</label>
+        <referenceTo>Currency__c</referenceTo>
+        <relationshipLabel>Order Lines Functional Currency</relationshipLabel>
+        <relationshipName>OrderLinesFunctionalCurrency</relationshipName>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>JobsQty__c</fullName>
+        <description>Number of jobs</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter number of jobs</inlineHelpText>
+        <label>Jobs Qty</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LineNum__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Order line number</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Auto generated line number</inlineHelpText>
+        <label>Line Num</label>
+        <length>15</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Market__c</fullName>
+        <description>Country where the order is sold</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select market</inlineHelpText>
+        <label>Market</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Australia</fullName>
+                    <default>false</default>
+                    <label>Australia</label>
+                </value>
+                <value>
+                    <fullName>China</fullName>
+                    <default>false</default>
+                    <label>China</label>
+                </value>
+                <value>
+                    <fullName>Russia</fullName>
+                    <default>false</default>
+                    <label>Russia</label>
+                </value>
+                <value>
+                    <fullName>Scotland</fullName>
+                    <default>false</default>
+                    <label>Scotland</label>
+                </value>
+                <value>
+                    <fullName>Singapore</fullName>
+                    <default>false</default>
+                    <label>Singapore</label>
+                </value>
+                <value>
+                    <fullName>Ukraine</fullName>
+                    <default>false</default>
+                    <label>Ukraine</label>
+                </value>
+                <value>
+                    <fullName>United Arabic Emirates</fullName>
+                    <default>false</default>
+                    <label>United Arabic Emirates</label>
+                </value>
+                <value>
+                    <fullName>United Kingdom</fullName>
+                    <default>false</default>
+                    <label>United Kingdom</label>
+                </value>
+                <value>
+                    <fullName>United States</fullName>
+                    <default>true</default>
+                    <label>United States</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Order__c</fullName>
+        <description>Parent order object</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select a parent record</inlineHelpText>
+        <label>Order</label>
+        <referenceTo>Order__c</referenceTo>
+        <relationshipLabel>Order Lines</relationshipLabel>
+        <relationshipName>Order_Lines</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ReportingCurrency__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Reporting currency</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select reporting currency</inlineHelpText>
+        <label>Reporting Currency</label>
+        <referenceTo>Currency__c</referenceTo>
+        <relationshipLabel>Order Lines Reporting Currency</relationshipLabel>
+        <relationshipName>OrderLinesReportingCurrency</relationshipName>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ServiceEndDate__c</fullName>
+        <defaultValue>Today() + 30</defaultValue>
+        <description>Service end date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter service end date</inlineHelpText>
+        <label>Service End Date</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ServiceStart__c</fullName>
+        <defaultValue>Today()</defaultValue>
+        <description>Service start date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter service start date</inlineHelpText>
+        <label>Service Start</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+                <value>
+                    <fullName>Expired</fullName>
+                    <default>false</default>
+                    <label>Expired</label>
+                </value>
+                <value>
+                    <fullName>Suspended</fullName>
+                    <default>false</default>
+                    <label>Suspended</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ThirtyDayUpg__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Thirty day upgrade</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicate whether it is a thirty day upgrade</inlineHelpText>
+        <label>Thirty Day Upgrade</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UsersQty__c</fullName>
+        <description>Number of users</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter number of users</inlineHelpText>
+        <label>Users Qty</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WebsiteName__c</fullName>
+        <description>Website name</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select website name</inlineHelpText>
+        <label>Website Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AllHealthcareJobs</fullName>
+                    <default>false</default>
+                    <label>AllHealthcareJobs</label>
+                </value>
+                <value>
+                    <fullName>ClearanceJobs</fullName>
+                    <default>false</default>
+                    <label>ClearanceJobs</label>
+                </value>
+                <value>
+                    <fullName>Dice</fullName>
+                    <default>false</default>
+                    <label>Dice</label>
+                </value>
+                <value>
+                    <fullName>eFCROW</fullName>
+                    <default>false</default>
+                    <label>eFCROW</label>
+                </value>
+                <value>
+                    <fullName>eFinancialCareers</fullName>
+                    <default>false</default>
+                    <label>eFinancialCareers</label>
+                </value>
+                <value>
+                    <fullName>JobsInTheMoney</fullName>
+                    <default>false</default>
+                    <label>JobsInTheMoney</label>
+                </value>
+                <value>
+                    <fullName>Learning</fullName>
+                    <default>false</default>
+                    <label>Learning</label>
+                </value>
+                <value>
+                    <fullName>Rigzone-DS</fullName>
+                    <default>false</default>
+                    <label>Rigzone-DS</label>
+                </value>
+                <value>
+                    <fullName>Rigzone-GE</fullName>
+                    <default>false</default>
+                    <label>Rigzone-GE</label>
+                </value>
+                <value>
+                    <fullName>Rigzone-OG</fullName>
+                    <default>false</default>
+                    <label>Rigzone-OG</label>
+                </value>
+                <value>
+                    <fullName>Rigzone-RL</fullName>
+                    <default>false</default>
+                    <label>Rigzone-RL</label>
+                </value>
+                <value>
+                    <fullName>Rigzone-RO</fullName>
+                    <default>false</default>
+                    <label>Rigzone-RO</label>
+                </value>
+                <value>
+                    <fullName>Rigzone-RZ</fullName>
+                    <default>false</default>
+                    <label>Rigzone-RZ</label>
+                </value>
+                <value>
+                    <fullName>Rigzone-SQ</fullName>
+                    <default>false</default>
+                    <label>Rigzone-SQ</label>
+                </value>
+                <value>
+                    <fullName>TargetedJobFairs</fullName>
+                    <default>false</default>
+                    <label>TargetedJobFairs</label>
+                </value>
+                <value>
+                    <fullName>WorldwideWorker</fullName>
+                    <default>false</default>
+                    <label>WorldwideWorker</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WebstoreUpg__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Webstore upgrade</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicate whether it is a webstore upgrade</inlineHelpText>
+        <label>Webstore Upgrade</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Order Line</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>OLN-{00000000}</displayFormat>
+        <label>Order Line Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Order Lines</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <visibility>Public</visibility>
+</CustomObject>
