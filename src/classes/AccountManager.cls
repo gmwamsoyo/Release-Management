@@ -1,3 +1,6 @@
+/*
+	Modified by Godfrey on 10/30/2017
+*/
 @RestResource(urlMapping='/Accounts/*/contacts')
 global with sharing class AccountManager
 {    
