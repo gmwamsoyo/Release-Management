@@ -1,5 +1,0 @@
-<apex:page docType="html-5.0" standardController="Contact" title="Assistant Info">
-    <p>       
-        {!contact.AssistantName} <a href="tel:{!contact.AssistantPhone}">{!contact.AssistantPhone}</a>
-    </p>
-</apex:page>
